@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <title>Test repo</title>
+</head>
+
+<body>
+
+    <div class="test">
+        <h1>Hello world</h1>
+    </div>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2025/06/09/17/31/insects-9650481_1280.jpg" alt="" >
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2014/04/17/18/04/insects-326693_1280.jpg" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2014/01/23/13/08/ladybug-250425_1280.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'vertical',
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+
+</body>
+</html>
